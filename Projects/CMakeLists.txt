@@ -282,7 +282,7 @@ IF(BUILD_OVERGROWTH)
     # enable USE_MSVC_RUNTIME_LIBRARY_DLL
     SET(USE_MSVC_RUNTIME_LIBRARY_DLL ON CACHE BOOL "Use MSVC Runtime Library DLL (/MD or /MDd)")
     SET(USE_GLUT OFF CACHE BOOL "Use Glut")
-    ADD_SUBDIRECTORY(bullet3-2.89 bullet3-2.89)
+    ADD_SUBDIRECTORY(bullet3-3.24 bullet3-3.24)
     ADD_SUBDIRECTORY(angelscript_2_32_0_sdk/angelscript/projects/cmake angelscript_2_32_0_sdk)
 
     #Put subprojects in the "Support" folder
@@ -587,7 +587,7 @@ INCLUDE_DIRECTORIES(
     ${LIBDIR}/ovr_sdk_win_1.12.0_public/OculusSDK/LibOVR/Include
     ${LIBDIR}/openvr-master/headers
     ${LIBDIR}/glm-0.9.4.2/
-    bullet3-2.89/src
+    bullet3-3.24/src
     angelscript_2_32_0_sdk/angelscript/include
     angelscript_2_32_0_sdk
     /angelscript/source
