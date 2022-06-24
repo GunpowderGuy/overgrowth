@@ -244,7 +244,7 @@ std::map<void *, std::set<void *> > &BulletWorld::GetCollisions() {
             BT_PROFILE("dispatchAllCollisionPairs");
             if (dispatcher) {
                 PROFILER_ENTER(g_profiler_ctx, "dispatchAllCollisionPairs");
-                dispatcher->dispatchAllCollisionPairs(dynamics_world_->m_broadphasePairCache->getOverlappingPairCache(), dispatchInfo, dynamics_world_->m_dispatcher1);
+              //  dispatcher->dispatchAllCollisionPairs(dynamics_world_->m_broadphasePairCache->getOverlappingPairCache(), dispatchInfo, dynamics_world_->m_dispatcher1);
                 PROFILER_LEAVE(g_profiler_ctx);
             }
         }
